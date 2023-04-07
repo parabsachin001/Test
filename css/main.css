@@ -1,0 +1,68 @@
+body {
+  margin: 0px;
+}
+
+.root {
+  border: none;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  border: none;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #334f5d;
+  color: #fff;
+}
+
+.headerText {
+  border: none;
+  width: 50%;
+  height: 50px;
+  overflow: hidden;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.body {
+  border: none;
+  width: calc(100% - 40px);
+  height: calc(100vh - 90px);
+  overflow: auto;
+  padding: 20px;
+}
+
+.body .jobListElementContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(90, 90, 90, 0.51);
+  margin-bottom: 20px;
+  justify-content: space-around;
+  text-align: left;
+  cursor: pointer;
+}
+
+.body .jobListElementContainer > div {
+  pointer-events: none;
+}
+
+.body .categoriesContainer {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.body .categoriesContainer > select {
+  cursor: pointer;
+}
